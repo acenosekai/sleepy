@@ -9,10 +9,10 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
       url: '',
       controller: 'AppCtrl',
       views: {
-        'navbar': {
-          templateUrl: 'app/js/core/templates/navbar.tpl.html',
-          controller: 'NavbarCtrl'
-        },
+//        'navbar': {
+//          templateUrl: 'app/js/core/templates/navbar.tpl.html',
+//          controller: 'NavbarCtrl'
+//        },
         'main': {
           templateUrl: 'app/js/core/templates/main.tpl.html'
         }

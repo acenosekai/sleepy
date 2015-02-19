@@ -43,8 +43,8 @@
 
 <body>
   <%- body %>
-    <div ui-view="navbar"></div>
-
+    
+    <!--    main app container -->
     <div class="main" ui-view="main"></div>
 
 
@@ -102,6 +102,7 @@
     <script src="/js/dependencies/jquery.js"></script>
     <script src="/js/dependencies/velocity.js"></script>
     <script src="/js/dependencies/moment-with-locales.js"></script>
+    <script src="/js/dependencies/validator.min.js"></script>
     <script src="/js/dependencies/angular.js"></script>
     <script src="/js/dependencies/angular-aria.js"></script>
     <script src="/js/dependencies/angular-animate.js"></script>
@@ -113,6 +114,7 @@
     <script src="/app/js/core/services/AuthService.js"></script>
     <script src="/app/js/core/filters/VersionFilter.js"></script>
     <script src="/app/js/core/directives/VersionDirective.js"></script>
+    <script src="/app/js/core/directives/ValidatorDirective.js"></script>
     <script src="/app/js/core/state.js"></script>
     <script src="/app/js/core/controllers/AppCtrl.js"></script>
     <script src="/app/js/core/controllers/NavbarCtrl.js"></script>
@@ -120,6 +122,9 @@
     <script src="/app/js/main/controllers/HomeCtrl.js"></script>
     <script src="/app/js/main/controllers/AboutCtrl.js"></script>
     <script src="/app/js/main/controllers/ContactCtrl.js"></script>
+    <script src="/app/js/auth/state.js"></script>
+    <script src="/app/js/auth/controllers/LoginCtrl.js"></script>
+    <script src="/app/js/auth/controllers/RegisterCtrl.js"></script>
     <!--SCRIPTS END-->
 </body>
 

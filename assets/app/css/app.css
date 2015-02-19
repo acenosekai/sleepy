@@ -1,5 +1,7 @@
 /* app css stylesheet */
-
+html{
+background-color: transparent!important;
+}
 body {
   margin: 0;
   padding: 0;

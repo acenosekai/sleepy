@@ -42,6 +42,14 @@ module.exports = function(grunt) {
         dest: '.tmp/public/js/dependencies'
       }, {
         expand: true,
+        cwd: './node_modules',
+        src: [
+            'validator/validator.min.js'
+        ],
+        flatten: true,
+        dest: '.tmp/public/js/dependencies'
+      }, {
+        expand: true,
         cwd: './bower_components',
         src: [
           'html5-boilerplate/css/normalize.css',

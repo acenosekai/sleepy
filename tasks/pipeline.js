@@ -33,6 +33,7 @@ var jsFilesToInject = [
   'js/dependencies/jquery.js',
   'js/dependencies/velocity.js',
   'js/dependencies/moment-with-locales.js',
+  'js/dependencies/validator.min.js',
 
   // Dependencies like jQuery, or Angular are brought in here
   'js/dependencies/angular.js',
@@ -49,6 +50,8 @@ var jsFilesToInject = [
   "app/js/core/services/AuthService.js",
   "app/js/core/filters/VersionFilter.js",
   "app/js/core/directives/VersionDirective.js",
+    
+  "app/js/core/directives/ValidatorDirective.js",
 
   //core
   "app/js/core/state.js",
@@ -59,7 +62,12 @@ var jsFilesToInject = [
   "app/js/main/state.js",
   "app/js/main/controllers/HomeCtrl.js",
   "app/js/main/controllers/AboutCtrl.js",
-  "app/js/main/controllers/ContactCtrl.js"
+  "app/js/main/controllers/ContactCtrl.js",
+    
+    //auth
+    "app/js/auth/state.js",
+    "app/js/auth/controllers/LoginCtrl.js",
+    "app/js/auth/controllers/RegisterCtrl.js"
 ];
 
 
