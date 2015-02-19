@@ -1,0 +1,29 @@
+{
+  "name": "sleepy",
+  "version": "0.0.1",
+  "homepage": "https://github.com/acenosekai/sleepy",
+  "authors": [
+    "acenosekai <acenosekai@gmail.com>"
+  ],
+  "description": "learn angular js",
+  "main": "assets/js/app/app.js",
+  "keywords": [
+    "sleepy",
+    "learning",
+    "angular",
+    "js"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-material": "master",
+    "lumx": "~0.3.10",
+    "angular-ui-seed": "~0.0.2"
+  }
+}
