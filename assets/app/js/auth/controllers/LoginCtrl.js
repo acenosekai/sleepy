@@ -1,21 +1,19 @@
-app.controller('LoginCtrl', ['$scope', function($scope) {
-    
-//    $scope.isValidIdentifier=function(identifier){
-//        console.log("asdw");
-//        return !validator.isNull(identifier);
-//    }
-//    
-//    
-//    
-//    $scope.isValidPassword=function(password){
-//        console.log("asdw");
-//        return !validator.isNull(password);
-//    }
-    
-  $scope.doLogin = function(login){
-      if ($scope.formLogin.$valid) {
+app.controller('LoginCtrl', ['$scope', 'Auth',
+  function($scope, Auth) {
+    $scope.doLogin = function(login) {
+      if ($scope.loginForm.$valid) {
+        Auth.login(login, function(data) {
+          console.log(data);
+          Auth.session(function(data) {
+            console.log(data);
+          }, function(data) {
+            console.error(data)
+          })
+        }, function(data) {
+          console.log(data)
+        });
         console.log("login");
       }
-      
+    }
   }
-}]);
+]);

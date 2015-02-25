@@ -1,36 +1,26 @@
-
-
 <div flex-container="column" flex-align="space-between center">
-     <div>
-         <div class="p+">
-            <strong class="fs-headline display-block">Login</strong>
-            <span class="fs-subhead tc-black-2 display-block">You need to login to get wonderfull experience</span>
-            <form name="formLogin" ng-submit="doLogin(login)" novalidate>
-             
-            
-                <div flex-container="row">
-                   
-                        <ace-input ace-input-label="Username/Email" ace-form-name="formLogin" ng-model="login.identifier" name="identifier"  type="text" not-empty autofocus />
-                    
-                 </div>
-                  <div flex-container="row">
-                    
-                        <ace-input ace-input-label="Password" ace-form-name="formLogin" ng-model="login.password" name="password"  type="password" not-empty />
-                    
-                 </div>
-            
-            <div class="mb mt+">
-                <button type="submit" class="btn btn--m btn--blue btn--raised" lx-ripple>Login</button>
-            </div>
-                 
-             <div>
-                <a class="fs-body-2"  ui-sref="app.register" href="#">Register !!</a> | <a class="fs-body-2" href="#">Lost Password</a>
-                </div>
-                 
-                                  
-                 
-             </form>
-             
+  <div>
+    <div class="p+">
+      <strong class="fs-headline display-block">Login</strong>
+      <span class="fs-subhead tc-black-2 display-block">You need to login to get wonderfull experience</span>
+      <form name="loginForm" ng-submit="doLogin(login)" novalidate>
+        <div flex-container="row">
+          <div flex-item>
+            <ace-lx-input ace-lx-input-label="Username/Email" ace-lx-form-name="loginForm" ng-model="login.identifier" name="identifier" type="text" not-empty autofocus />
+          </div>
         </div>
-    </div>        
+        <div flex-container="row">
+          <div flex-item>
+            <ace-lx-input ace-lx-input-label="Password" ace-lx-form-name="loginForm" ng-model="login.password" name="password" type="password" not-empty />
+          </div>
+        </div>
+        <div class="mb mt+">
+          <button type="submit" class="btn btn--m btn--blue btn--raised" lx-ripple>Login</button>
+        </div>
+        <div>
+          <a class="fs-body-2" ui-sref="app.register" href="#">Register !!</a> | <a class="fs-body-2" href="#">Lost Password</a>
+        </div>
+      </form>
+    </div>
+  </div>
 </div>

@@ -1,45 +1,43 @@
-
-
 <div flex-container="column" flex-align="space-between center">
-     <div>
-         <div class="p+">
-            <strong class="fs-headline display-block">Sign Up</strong>
-            <span class="fs-subhead tc-black-2 display-block">Get new account now...! trevel to the beautifull world</span>
-             
-             
-             <div class="pt0">
-                <div flex-container="row">
-                    <div flex-item>
-                        <lx-text-field label="Username">
-                            <input type="text" ng-model="register.username" autofocus>
-                        </lx-text-field>
-                    </div>
-                 </div>
-                 <div flex-container="row">
-                    <div flex-item>
-                        <lx-text-field label="Email">
-                            <input type="email" ng-model="register.email">
-                        </lx-text-field>
-                    </div>
-                 </div>
-                  <div flex-container="row">
-                    <div flex-item>
-                       <lx-text-field label="Password">
-                        <input type="password" ng-model="register.password">
-                        </lx-text-field>
-                    </div>
-                 </div>
-             </div>
-                          
-            <div class="mb mt+">
-                <button ng-click="doRegister(register)" class="btn btn--m btn--blue btn--raised" lx-ripple>Sign Up</button>
-                
-                
+  <div>
+    <div class="p+">
+      <strong class="fs-headline display-block">Sign Up</strong>
+      <span class="fs-subhead tc-black-2 display-block">Get new account now...! trevel to the beautifull world</span>
+      <form name="registerForm" ng-submit="doRegister(register)" novalidate>
+
+        <div class="pt0">
+          <div flex-container="row">
+            <div flex-item>
+              <ace-lx-input ace-lx-input-label="Username" ace-lx-form-name="registerForm" ng-model="register.username" name="username" type="text" not-empty autofocus />
             </div>
-             <div>
-                <a class="fs-body-2"  ui-sref="app.login" href="#">Login</a> | <a class="fs-body-2" href="#">Lost Password</a>
-                </div>
-             
+          </div>
+          <div flex-container="row">
+            <div flex-item>
+              <ace-lx-input ace-lx-input-label="Email" ace-lx-form-name="registerForm" ng-model="register.email" name="email" type="text" not-empty is-email />
+            </div>
+          </div>
+          <div flex-container="row">
+            <div flex-item>
+              <ace-lx-input ace-lx-input-label="Password" ace-lx-form-name="registerForm" ng-model="register.password" name="password" type="password" not-empty />
+            </div>
+          </div>
+
+          <div flex-container="row">
+            <div flex-item>
+              <ace-lx-input ace-lx-input-label="Repeat Password" ace-lx-form-name="registerForm" ng-model="register.passwordConfirm" name="passwordConfirm" type="password" not-empty equal="register.password" />
+            </div>
+          </div>
         </div>
-    </div>        
+
+        <div class="mb mt+">
+          <button type="submit" class="btn btn--m btn--blue btn--raised" lx-ripple>Sign Up</button>
+        </div>
+        <div>
+          <a class="fs-body-2" ui-sref="app.login" href="#">Login</a> | <a class="fs-body-2" href="#">Lost Password</a>
+        </div>
+
+      </form>
+    </div>
+  </div>
 </div>
+

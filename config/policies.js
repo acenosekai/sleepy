@@ -25,8 +25,13 @@ module.exports.policies = {
    * access)                                                                  *
    *                                                                          *
    ***************************************************************************/
-  '*': ['passport']
-  // '*': true,
+  '*': ['passport', 'sessionAuth'],
+  AuthRestController: {
+    '*': false,
+    'callback': 'passport',
+    'logout': 'passport',
+    'session': 'passport'
+  }
 
   /***************************************************************************
    *                                                                          *
