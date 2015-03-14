@@ -40,34 +40,33 @@ var jsFilesToInject = [
   'js/dependencies/angular-aria.js',
   'js/dependencies/angular-animate.js',
   'js/dependencies/angular-material.js',
-  'js/dependencies/lumx.js',
   'js/dependencies/angular-ui-router.js',
 
   //app js
 
-  "app/js/app.js",
-  "app/js/core/services/VersionService.js",
-  "app/js/core/services/AuthService.js",
-  "app/js/core/filters/VersionFilter.js",
-  "app/js/core/directives/VersionDirective.js",
-    
-  "app/js/core/directives/ValidatorDirective.js",
-
-  //core
-  "app/js/core/state.js",
-  "app/js/core/controllers/AppCtrl.js",
-  "app/js/core/controllers/NavbarCtrl.js",
-
-  //main
-  "app/js/main/state.js",
-  "app/js/main/controllers/HomeCtrl.js",
-  "app/js/main/controllers/AboutCtrl.js",
-  "app/js/main/controllers/ContactCtrl.js",
-    
-    //auth
-    "app/js/auth/state.js",
-    "app/js/auth/controllers/LoginCtrl.js",
-    "app/js/auth/controllers/RegisterCtrl.js"
+//  "app/js/app.js",
+//  "app/js/core/services/VersionService.js",
+//  "app/js/core/services/AuthService.js",
+//  "app/js/core/filters/VersionFilter.js",
+//  "app/js/core/directives/VersionDirective.js",
+//    
+//  "app/js/core/directives/ValidatorDirective.js",
+//
+//  //core
+//  "app/js/core/state.js",
+//  "app/js/core/controllers/AppCtrl.js",
+//  "app/js/core/controllers/NavbarCtrl.js",
+//
+//  //main
+//  "app/js/main/state.js",
+//  "app/js/main/controllers/HomeCtrl.js",
+//  "app/js/main/controllers/AboutCtrl.js",
+//  "app/js/main/controllers/ContactCtrl.js",
+//    
+//    //auth
+//    "app/js/auth/state.js",
+//    "app/js/auth/controllers/LoginCtrl.js",
+//    "app/js/auth/controllers/RegisterCtrl.js"
 ];
 
 

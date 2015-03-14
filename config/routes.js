@@ -35,7 +35,7 @@ module.exports.routes = {
   '/': {
     view: 'homepage'
   },
-
+  'get /playground': 'AdminController.index',
   //api rest
   'post /rest/auth/local': 'AuthRestController.callback',
   'post /rest/auth/local/:action': 'AuthRestController.callback',
