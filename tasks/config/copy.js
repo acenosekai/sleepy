@@ -31,12 +31,11 @@ module.exports = function(grunt) {
           'angular-animate/angular-animate.js',
           'angular-material/angular-material.js',
           'angular-ui-router/release/angular-ui-router.js',
+          'angular-messages/angular-messages.js',
           'html5-boilerplate/js/vendor/modernizr-2.6.2.min.js',
+
           //LumX dependency
-          'jquery/dist/jquery.js',
-          'velocity/velocity.js',
-          'moment/min/moment-with-locales.js',
-          'lumx/dist/lumx.js'
+          
         ],
         flatten: true,
         dest: '.tmp/public/js/dependencies'
@@ -44,7 +43,7 @@ module.exports = function(grunt) {
         expand: true,
         cwd: './node_modules',
         src: [
-            'validator/validator.min.js'
+          'validator/validator.min.js'
         ],
         flatten: true,
         dest: '.tmp/public/js/dependencies'
@@ -54,10 +53,9 @@ module.exports = function(grunt) {
         src: [
           'html5-boilerplate/css/normalize.css',
           'html5-boilerplate/css/main.css',
-            'lumx/dist/lumx.css',
-            'mdi/materialdesignicons.css',
-            'angular-material/angular-material.min.css'
-            
+          'mdi/materialdesignicons.css',
+          'angular-material/angular-material.min.css'
+
         ],
         flatten: true,
         dest: '.tmp/public/styles'

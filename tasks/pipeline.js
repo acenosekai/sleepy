@@ -19,7 +19,6 @@ var cssFilesToInject = [
   'styles/main.css',
   'styles/angular-material.min.css',
   'styles/materialdesignicons.cdd',
-  'styles/lumx.css',
   'app/css/app.css'
 ];
 
@@ -40,7 +39,8 @@ var jsFilesToInject = [
   'js/dependencies/angular-aria.js',
   'js/dependencies/angular-animate.js',
   'js/dependencies/angular-material.js',
-  'js/dependencies/angular-ui-router.js',
+  'js/dependencies/angular-ui-router.js',    
+  'js/dependencies/angular-messages.js',
 
   //app js
 
