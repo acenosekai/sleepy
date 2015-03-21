@@ -1,0 +1,27 @@
+<div layout="column" ng-submit="doLogin(login)">
+  <md-toolbar class="md-primary">
+    <h1 class="md-toolbar-tools">
+      PlayGround Login
+    </h1>
+  </md-toolbar>
+  <md-content class="md-padding">
+    <form name="loginForm">
+      <md-input-container>
+        <label>Username/Email</label>
+        <input required name="identifier" ng-model="login.identifier">
+        <div ng-messages="loginForm.identifier.$error">
+          <div ng-message="required">This is required.</div>
+        </div>
+      </md-input-container>
+      <md-input-container>
+        <label>Client Name</label>
+        <input required name="password" ng-model="login.password" type="password">
+        <div ng-messages="loginForm.password.$error">
+          <div ng-message="required">This is required.</div>
+        </div>
+      </md-input-container>
+
+      <md-button type="submit" class="md-raised md-primary">Login</md-button>
+    </form>
+  </md-content>
+</div>
